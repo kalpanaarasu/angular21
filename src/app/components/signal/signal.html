@@ -1,0 +1,45 @@
+<p>signal works!</p>
+<table>
+    <tr>
+        <td>
+            <input type="text " value="{{courseName}}">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {{courseDuration()}}
+        </td>
+    </tr>
+    <tr>
+        <td>
+         <button (click)="changeDuration()">change Duration</button>   
+        </td>
+    </tr>
+    <tr>
+        <td>{{cityName()}}</td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="addCity()">Add City</button>
+        </td>
+        </tr>
+    <tr>
+        <td>{{cityName()}}</td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="addNewCity('Bangalore')">Add Bangalore</button>        </td>
+    </tr>
+    <tr>
+        <td>
+            {{studentObj().name}}--{{studentObj().city}}
+        </td>
+    </tr>
+    <tr>
+
+        <td>
+            <button (click)="changeCityInStudent()" >ChangeCity</button>
+        </td>
+    </tr>
+
+</table>

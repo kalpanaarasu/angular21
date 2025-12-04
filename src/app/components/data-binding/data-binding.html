@@ -1,0 +1,42 @@
+<p>data-binding works!</p>
+<table>
+    <tr>
+        <td>{{courseName}}</td>
+    </tr>
+    <tr>
+        <td>{{rollNumber}}</td>
+    </tr>
+    <tr>
+        <td>{{currentDate}}</td>
+    </tr>
+    <tr>
+        <td>Valid : <span><input type="checkbox" [(ngModel)]="isActive"></span></td>
+    </tr>
+    <tr>
+        <td><input [minLength]="minTextLength" type="text" [value]="courseName" /></td>
+    </tr>
+    <tr>
+        <td><input type=text [(ngModel)]="courseName"></td>
+    </tr>
+
+</table>
+
+
+<br>
+<hr>
+<table>
+    <tr>
+        <td>
+            <button (click)="showAlert()">show Alert</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select (change)="onCityChanged()"   id="">
+                <option value="">Mumbai</option>
+                <option value="">Nagpur</option>
+                <option value="">Pune</option>
+            </select>
+        </td>
+    </tr>
+</table>
